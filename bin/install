@@ -32,7 +32,7 @@ install_minikube() {
         mkdir -p "${install_path}/bin"
     fi
 
-    curl -fL# -o "${filename}" "${download}"
+    curl -fsSL -o "${filename}" "${download}"
     chmod +x "${install_path}/bin/minikube"
 }
 
